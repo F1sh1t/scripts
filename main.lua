@@ -1,17 +1,24 @@
+getgenv().Key = "HelloEpicGUI"
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/UILib.lua"))()
 
 local MainUI = UILibrary.Load("EQux Hub")
 local FirstPage = MainUI.AddPage("Misc")
 
 local FirstLabel = FirstPage.AddLabel("YBA cuz yes")
-local FirstButton = FirstPage.AddButton("Rejoin", function()
-		local ts = game:GetService("TeleportService")
-		local p = game:GetService("Players").LocalPlayer
-		ts:Teleport(game.PlaceId, p)
+local FirstButton = FirstPage.AddButton("Arrow Migration?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAv2.lua"))()
 end)
-local FirstSlider = FirstPage.AddSlider("WalkSpeed", {Min = 0, Max = 255, Def = 50}, function(Value)
-while true do
-wait(0.5)
-game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
-end
+local FirstSlider = FirstPage.AddSlider("Arrow Stand Bypass", {Min = 0, Max = 100, Def = 1}, function(Valua)
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Valua
+end)
+local FirstDropdown = FirstPage.AddDropdown("Stand %x", {
+Value,
+"Star Platinum"
+"White Snake"
+"Anubis"
+"King Crimson (FIXED)"
+"Six Pistols"
+"Magicians Red"
+}, function(Value)
+print("Stand over chances selected by" + Value)
 end)
