@@ -14,11 +14,11 @@ local FirstSlider = FirstPage.AddSlider("Arrow Stand Bypass", {Min = 0, Max = 10
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Valua
 end)
 local FirstDropdown = FirstPage.AddDropdown("Stand %x", {
-"Star Platinum"
-"White Snake"
-"Anubis"
-"King Crimson (FIXED)"
-"Six Pistols"
+"Star Platinum",
+"White Snake",
+"Anubis",
+"King Crimson (FIXED)",
+"Six Pistols",
 "Magicians Red"
 }, function(Value)
 print("Stand over chances selected by")
