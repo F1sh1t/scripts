@@ -10,8 +10,8 @@ local FirstButton = FirstPage.AddButton("Rejoin", function()
 		ts:Teleport(game.PlaceId, p)
 end)
 local FirstSlider = FirstPage.AddSlider("Walkspeed", {Min = 0, Max = 300, Def = 1}, function(t)
-local walkspeed = 32
-local speed = t + walkspeed*0.05
+local walkspeed = t
+local speed = 1 + walkspeed*0.05
 local rocket = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.Torso)
 local upvalue = 0
 rocket.maxForce = Vector3.new(12500,12500,12500)
