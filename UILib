@@ -7,15 +7,20 @@ local CoreGuiService = game:GetService("CoreGui")
 local RunService = game:GetService("RunService")
 local TextService = game:GetService("TextService")
 
+ local UILibrary = Instance.new("ScreenGui")
+ UILibrary.Name = "UILibrary"
+ UILibrary.Parent =  game.CoreGui
+ UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
  local uitoggled = false
  UserInputService.InputBegan:Connect(
   function(io, p)
      if io.KeyCode == Enum.KeyCode.RightControl then
         if uitoggled == false then
-           Library.Enabled = false
+           UILibrary.Enabled = false
            uitoggled = true
         else
-           Library.Enabled = true
+           UILibrary.Enabled = true
            uitoggled = false
         end
      end
