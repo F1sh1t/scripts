@@ -2,18 +2,17 @@ local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/F1s
 
 local MainUI = UILibrary.Load("EQux Hub")
 local FirstPage = MainUI.AddPage("Misc")
+local SecondPage = MainUI.AddPage("Scripts")
 
-local FirstLabel = FirstPage.AddLabel("YBA cuz yes")
-local FirstButton = FirstPage.AddButton("Arrow Migration?", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/novouch"))()
-end)
-local FirstToggle = FirstPage.AddToggle("Stand Bypass %x Value", false, function(Valug)
+local FirstLabel = FirstPage.AddLabel("YBA Crack Chances")
+local FirstToggle = FirstPage.AddToggle("Stand Bypass %xbn", false, function(Valug)
 print(Valug)
 end)
-local FirstSlider = FirstPage.AddSlider("Arrow Stand Bypass", {Min = 0, Max = 100, Def = 1}, function(Valua)
+local FirstSlider = FirstPage.AddSlider("Arrow Stand Bypass v2.0 (Rec. 85)", {Min = 0, Max = 125, Def = 1}, function(Valua)
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Valua
 end)
-local FirstDropdown = FirstPage.AddDropdown("Stand %x", {
+local FirstDropdown = FirstPage.AddDropdown("Stand Req. v2.0", {
+"The World",
 "Star Platinum",
 "White Snake",
 "Anubis",
@@ -22,4 +21,17 @@ local FirstDropdown = FirstPage.AddDropdown("Stand %x", {
 "Magicians Red"
 }, function(Value)
 print("Stand over chances selected by")
+end)
+local FirstDropdown = FirstPage.AddDropdown("True Skin", {
+"The World: Girl World",
+"Star Platinum: Blur",
+"Anubis: Giant Swords",
+"King Crimson: Oreo",
+"Magicians Red: Over Heaven"
+}, function(Value)
+print("Stando skins activated!")
+end)
+local FirstLabel = SecondPage.AddLabel("YBA cuz yes")
+local FirstButton = SecondPage.AddButton("Inject Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/novouch"))()
 end)
