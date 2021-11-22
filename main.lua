@@ -16,4 +16,6 @@ while true do
 wait(0.5)
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
 end)
+local FirstSlider = FirstPage.AddSlider("Hello", {Min = 0, Max = 255, Def = 50}, function(Value)
+print(Value)
 end)
