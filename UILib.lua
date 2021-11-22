@@ -1,5 +1,3 @@
-_G.Search = true
-
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
@@ -345,7 +343,7 @@ function UILibrary.Load(GUITitle)
 		DisplayPadding.PaddingRight = UDim.new(0,5)
 		DisplayPadding.Parent = DisplayPage
 		
-		if _G.Search = true then
+		if TempDisabled then
 			local SearchBarContainer = RoundBox(5)
 			SearchBarContainer.Name = "SearchBar"
 			SearchBarContainer.ImageColor3 = Color3.fromRGB(35,35,35)
