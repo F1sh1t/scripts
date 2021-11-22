@@ -1,4 +1,3 @@
-getgenv().Key = "HelloEpicGUI"
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/UILib.lua"))()
 
 local MainUI = UILibrary.Load("EQux Hub")
