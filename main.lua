@@ -20,5 +20,5 @@ Value,
 "Six Pistols"
 "Magicians Red"
 }, function(Value)
-print("Stand over chances selected by" + Value)
+print("Stand over chances selected by")
 end)
