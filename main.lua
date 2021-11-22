@@ -9,7 +9,7 @@ local FirstButton = FirstPage.AddButton("Rejoin", function()
 		local p = game:GetService("Players").LocalPlayer
 		ts:Teleport(game.PlaceId, p)
 end)
-local FirstSlider = FirstPage.AddSlider("Walkspeed", {Min = 0, Max = 300, Def = 1}, function(w)
+local FirstSlider = FirstPage.AddSlider("Walkspeed", {Min = 0, Max = 300, Def = 100}, function(w)
 local walkspeed = w
 local speed = 1 + walkspeed*0.05
 while true do
