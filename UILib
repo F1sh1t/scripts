@@ -7,26 +7,6 @@ local CoreGuiService = game:GetService("CoreGui")
 local RunService = game:GetService("RunService")
 local TextService = game:GetService("TextService")
 
- local UILibrary = Instance.new("ScreenGui")
- UILibrary.Name = "UILibrary"
- UILibrary.Parent =  game.CoreGui
- UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
- local uitoggled = false
- UserInputService.InputBegan:Connect(
-  function(io, p)
-     if io.KeyCode == Enum.KeyCode.RightControl then
-        if uitoggled == false then
-           UILibrary.Enabled = false
-           uitoggled = true
-        else
-           UILibrary.Enabled = true
-           uitoggled = false
-        end
-     end
-  end
- )
-
 local TweenTime = 0.1
 local Level = 1
 
@@ -258,6 +238,28 @@ function UILibrary.Load(GUITitle)
 	TitleButton.Name = "TitleButton"
 	TitleButton.Size = UDim2.new(1,-20,1,0)
 	TitleButton.Parent = TitleBar
+
+
+ local UILibrary = Instance.new("ScreenGui")
+ UILibrary.Name = "UILibrary"
+ UILibrary.Parent =  game.CoreGui
+ UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ local uitoggled = false
+ UserInputService.InputBegan:Connect(
+  function(io, p)
+     if io.KeyCode == Enum.KeyCode.RightControl then
+        if uitoggled == false then
+           UILibrary.Enabled = false
+           uitoggled = true
+        else
+           UILibrary.Enabled = true
+           uitoggled = false
+        end
+     end
+  end
+ )
+
 	
 	MinimiseButton.MouseButton1Down:Connect(function()
 		MinimiseToggle = not MinimiseToggle
