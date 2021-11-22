@@ -9,19 +9,11 @@ local FirstButton = FirstPage.AddButton("Rejoin", function()
 		local p = game:GetService("Players").LocalPlayer
 		ts:Teleport(game.PlaceId, p)
 end)
-local FirstSlider = FirstPage.AddSlider("Walkspeed", {Min = 0, Max = 300, Def = 1}, function(t)
-local walkspeed = t
+local FirstSlider = FirstPage.AddSlider("Walkspeed", {Min = 0, Max = 300, Def = 1}, function(w)
+local walkspeed = w
 local speed = 1 + walkspeed*0.05
-local rocket = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.Torso)
-
-spawn(function()
 while true do
-wait()
-if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial == Enum.Material.Air then
-rocket.Parent = game.Players.LocalPlayer.Character
 wait(0.5)
-else
-wait(0.5)
-rocket.Parent = game.Players.LocalPlayer.Character.Torso
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
 end
 end)
