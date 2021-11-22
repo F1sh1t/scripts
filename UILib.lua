@@ -345,7 +345,7 @@ function UILibrary.Load(GUITitle)
 		DisplayPadding.PaddingRight = UDim.new(0,5)
 		DisplayPadding.Parent = DisplayPage
 		
-		if _G.Search = true then
+		if _G.Search then
 			local SearchBarContainer = RoundBox(5)
 			SearchBarContainer.Name = "SearchBar"
 			SearchBarContainer.ImageColor3 = Color3.fromRGB(35,35,35)
