@@ -178,7 +178,21 @@ function UILibrary.Load(GUITitle)
 	NewInstance = Instance.new("ScreenGui")
 	NewInstance.Name = GUITitle
 	NewInstance.Parent = TargetedParent
-	
+        UILIbrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ local uitoggled = false
+ UserInputService.InputBegan:Connect(
+  function(io, p)
+     if io.KeyCode == Enum.KeyCode.RightControl then
+        if uitoggled == false then
+           UILibrary.Enabled = false
+           uitoggled = true
+        else
+           UILibrary.Enabled = true
+           uitoggled = false
+        end
+     end
+  end
+ )
 	ContainerFrame = Frame()
 	ContainerFrame.Name = "ContainerFrame"
 	ContainerFrame.Size = UDim2.new(0,500,0,300)
@@ -238,28 +252,6 @@ function UILibrary.Load(GUITitle)
 	TitleButton.Name = "TitleButton"
 	TitleButton.Size = UDim2.new(1,-20,1,0)
 	TitleButton.Parent = TitleBar
-
-
- local UILibrary = Instance.new("ScreenGui")
- UILibrary.Name = "UILibrary"
- UILibrary.Parent =  game.CoreGui
- UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
- local uitoggled = false
- UserInputService.InputBegan:Connect(
-  function(io, p)
-     if io.KeyCode == Enum.KeyCode.RightControl then
-        if uitoggled == false then
-           UILibrary.Enabled = false
-           uitoggled = true
-        else
-           UILibrary.Enabled = true
-           uitoggled = false
-        end
-     end
-  end
- )
-
 	
 	MinimiseButton.MouseButton1Down:Connect(function()
 		MinimiseToggle = not MinimiseToggle
