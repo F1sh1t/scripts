@@ -33,4 +33,6 @@ spawn(function()
 while true do
 wait()
 rocket.Position = Vector3.new(game.Players.LocalPlayer.Character.Torso.Position.X+game.Players.LocalPlayer.Character.Humanoid.MoveDirection.X*speed*5.4,game.Players.LocalPlayer.Character.Torso.Position.Y,game.Players.LocalPlayer.Character.Torso.Position.Z+game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Z*speed*5.4)
+end
+end)
 end)
