@@ -16,3 +16,4 @@ while true do
 wait(0.5)
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
 end)
+end)
