@@ -1,5 +1,3 @@
-_G.Search = false
-
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
