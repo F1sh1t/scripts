@@ -3,7 +3,7 @@ local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/F1s
 local MainUI = UILibrary.Load("EQux Hub")
 local FirstPage = MainUI.AddPage("Misc")
 
-local FirstLabel = FirstPage.AddLabel("Section 1")
+local FirstLabel = FirstPage.AddLabel("YBA cuz yes")
 local FirstButton = FirstPage.AddButton("Rejoin", function()
 		local ts = game:GetService("TeleportService")
 		local p = game:GetService("Players").LocalPlayer
