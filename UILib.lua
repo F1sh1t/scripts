@@ -197,7 +197,7 @@ function UILibrary.Load(GUITitle)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Size = UDim2.new(1,-50,1,-30)
 	MainFrame.Position = UDim2.new(0,25,0,15)
-	MainFrame.ImageColor3 = Color3.fromRGB(30,30,30)
+	MainFrame.ImageColor3 = Color3.fromRGB(252, 140, 3)
 	MainFrame.Parent = ContainerFrame
 	
 	local MenuBar, DisplayFrame, TitleBar
@@ -213,7 +213,7 @@ function UILibrary.Load(GUITitle)
 	
 	DisplayFrame = RoundBox(5)
 	DisplayFrame.Name = "Display"
-	DisplayFrame.ImageColor3 = Color3.fromRGB(20,20,20)
+	DisplayFrame.ImageColor3 = Color3.fromRGB(252, 140, 3)
 	DisplayFrame.Size = UDim2.new(1,-115,0,235)
 	DisplayFrame.Position = UDim2.new(0,110,0,30)
 	DisplayFrame.Parent = MainFrame
