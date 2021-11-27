@@ -186,7 +186,7 @@ function library:Window(name)
         Button.Name = "Button"
         Button.Parent = Window
         Button.BackgroundColor3 = Color3.fromRGB(255, 183, 59)
-        Button.BorderColor3 = Color3.fromRGB(2255, 255, 255)
+        Button.BorderColor3 = Color3.fromRGB(255, 255, 255)
         Button.Position = UDim2.new(0, 12, 0, listOffset[winCount])
         Button.Size = UDim2.new(0, 182, 0, 26)
         Button.ZIndex = 2 + zindex
@@ -202,7 +202,7 @@ function library:Window(name)
         pastSliders[winCount] = false
     end
     function functions:Label(text, color)
-        local color = color or Color3.fromRGB(220, 221, 225)
+        local color = color or Color3.fromRGB(0, 0, 0)
 
         sizes[winCount] = sizes[winCount] + 32
         Window.Size = UDim2.new(0, 207, 0, sizes[winCount] + 10)
