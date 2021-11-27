@@ -31,7 +31,7 @@ local FirstDropdown = FirstPage.AddDropdown("True Skin", {
 }, function(Value)
 print("Stando skins activated!")
 end)
-local FirstLabel = SecondPage.AddLabel("YBA cuz yes")
+local FirstLabel = SecondPage.AddLabel("Developer: Fishit#0879")
 local FirstButton = SecondPage.AddButton("Inject Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/novouch"))()
 end)
