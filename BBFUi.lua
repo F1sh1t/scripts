@@ -302,12 +302,12 @@ function library:Window(name)
         TextBox.Position = UDim2.new(0, 99, 0, listOffset[winCount])
         TextBox.Size = UDim2.new(0, 95, 0, 26)
         TextBox.Font = Enum.Font.SourceSans
-        TextBox.PlaceholderColor3 = Color3.fromRGB(220, 221, 225)
+        TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
         TextBox.PlaceholderText = "..."
         TextBox.Text = ""
-        TextBox.TextColor3 = Color3.fromRGB(245, 246, 250)
+        TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
         TextBox.TextSize = 16.000
-        TextBox.TextStrokeColor3 = Color3.fromRGB(245, 246, 250)
+        TextBox.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
         TextBox.ZIndex = 2 + zindex
         TextBox:GetPropertyChangedSignal('Text'):connect(function()
             callback(TextBox.Text, false)
@@ -442,8 +442,8 @@ function library:Window(name)
 
         SilderFiller.Name = "SilderFiller"
         SilderFiller.Parent = Slider
-        SilderFiller.BackgroundColor3 = Color3.fromRGB(76, 209, 55)
-        SilderFiller.BorderColor3 = Color3.fromRGB(47, 54, 64)
+        SilderFiller.BackgroundColor3 = Color3.fromRGB(245, 189, 34)
+        SilderFiller.BorderColor3 = Color3.fromRGB(245, 189, 34)
         SilderFiller.Size = UDim2.new(0, (Slider.Size.X.Offset - 5) * ((default - min)/(max-min)), 0, 6)
         SilderFiller.ZIndex = 2 + zindex
         SilderFiller.BorderMode = Enum.BorderMode.Inset
