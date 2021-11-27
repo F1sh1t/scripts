@@ -131,22 +131,22 @@ function library:Window(name)
     local HeaderText = Instance.new("TextLabel")
     HeaderText.Name = "HeaderText"
     HeaderText.Parent = Header
-    HeaderText.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    HeaderText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     HeaderText.BackgroundTransparency = 1.000
     HeaderText.Position = UDim2.new(0, 0, -0.0020698905, 0)
     HeaderText.Size = UDim2.new(0, 206, 0, 33)
     HeaderText.ZIndex = 6 + zindex
     HeaderText.Font = Enum.Font.SourceSans
     HeaderText.Text = name or "Window"
-    HeaderText.TextColor3 = Color3.fromRGB(47, 54, 64)
+    HeaderText.TextColor3 = Color3.fromRGB(0, 0, 0)
     HeaderText.TextSize = 17.000
 
     local Minimise = Instance.new("TextButton")
     local Window = Instance.new("Frame")
     Minimise.Name = "Minimise"
     Minimise.Parent = Header
-    Minimise.BackgroundColor3 = Color3.fromRGB(255, 81, 0)
-    Minimise.BorderColor3 = Color3.fromRGB(208, 0, 255)
+    Minimise.BackgroundColor3 = Color3.fromRGB(252, 155, 18)
+    Minimise.BorderColor3 = Color3.fromRGB(252, 155, 18)
     Minimise.Position = UDim2.new(0, 185, 0, 2)
     Minimise.Size = UDim2.new(0, 22, 0, 22)
     Minimise.ZIndex = 7 + zindex
@@ -186,7 +186,7 @@ function library:Window(name)
         Button.Name = "Button"
         Button.Parent = Window
         Button.BackgroundColor3 = Color3.fromRGB(255, 183, 59)
-        Button.BorderColor3 = Color3.fromRGB(208, 0, 255)
+        Button.BorderColor3 = Color3.fromRGB(2255, 255, 255)
         Button.Position = UDim2.new(0, 12, 0, listOffset[winCount])
         Button.Size = UDim2.new(0, 182, 0, 26)
         Button.ZIndex = 2 + zindex
