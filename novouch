@@ -1,2 +1,2 @@
 getgenv().Key = "HelloEpicGUI"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAv2.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/F1sh1t/scripts/main/re1bdi"))()
